@@ -18,6 +18,11 @@ import SwiftUI
     public func hash(into hasher: inout Hasher) {
         hasher.combine(isim)
     }
+    @inlinable public init(meslek: Meslek, isim: String, logo: Image) {
+        self.meslek = meslek
+        self.isim = isim
+        self.logo = logo
+    }
 }
 
 @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 4.0, *)
