@@ -1,3 +1,3 @@
-# BebekUI
+# BebeUI
 
-A description of this package.
+BebeUI, bebekler uygulaması için yapılmış birkaç yardımcı paket.
