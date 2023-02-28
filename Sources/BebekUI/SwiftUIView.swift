@@ -79,7 +79,7 @@ import SwiftUI
 @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 4.0, *)
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView(meslek: .ajan, isim: "Agu Kalkanı", font: .title, textfont: .system(size: 7))
+        SwiftUIView(meslek: .ajan, isim: "Bebe Kalkanatik Devreleri", font: .system(size: 57), textfont: .system(size: 7))
             .padding(10)
     }
 }
