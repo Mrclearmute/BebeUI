@@ -8,9 +8,9 @@
 import Foundation
 import SwiftUI
 
-struct BebeSistemi{
+public struct BebeSistemi{
     @State public var hesaplar = [insan]()
-    func Onayla(ad: String, parola: String) -> Bool {
+    public func Onayla(ad: String, parola: String) -> Bool {
         for insan in hesaplar {
             if ad == insan.ad{
                 if parola == insan.parola{
@@ -26,8 +26,8 @@ struct BebeSistemi{
     }
 }
 
-struct insan: Identifiable, Hashable{
-    var id: UUID
+public struct insan: Identifiable, Hashable{
+    public var id: UUID
     var ad: String
     var parola: String
     var e_mail: String
