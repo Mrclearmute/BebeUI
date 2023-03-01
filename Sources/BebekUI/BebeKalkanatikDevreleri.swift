@@ -8,8 +8,8 @@
 import SwiftUI
 
 @available(macOS 13.0, iOS 16.0, tvOS 16.0, watchOS 8.0, *)
-struct BebeKalkanatikDevreleri: View {
-    var body: some View {
+public struct BebeKalkanatikDevreleri: View {
+    public var body: some View {
         NavigationStack {
             Image(systemName: "custom.lock.trianglebadge.exclamationmark")
         }
