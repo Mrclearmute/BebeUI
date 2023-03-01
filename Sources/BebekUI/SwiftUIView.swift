@@ -41,80 +41,9 @@ import SwiftUI
         self.isim = isim
         self.font = font
         self.textfont = textfont
-        let ad = Array(self.isim.lowercased())
-        var devam = false
-        var sayı = 0
-        kalkan = false
-        for harf in ad{
-            if harf == "k"{
-                devam = true
-                sayı += 1
-            } else if harf == "a" && devam == true{
-                sayı += 1
-            } else if harf == "l" && devam == true{
-                sayı += 1
-            } else if harf == "k" && devam == true{
-                sayı += 1
-            } else if harf == "a" && devam == true{
-                sayı += 1
-            } else if harf == "n" && devam == true{
-                sayı += 1
-                print(harf)
-                if sayı == 6 && devam == true{
-                    kalkan = true
-                }
-            } else {
-                if sayı == 6 && devam == true{
-                    kalkan = true
-                }
-                devam = false
-            }
-        }
-        var devam2 = false
-        var sayı2 = 0
-        for harf in ad{
-            if harf == "b"{
-                devam2 = true
-                sayı2 += 1
-            } else if harf == "e" && devam2 == true{
-                sayı2 += 1
-            } else if harf == "b" && devam2 == true{
-                sayı2 += 1
-            } else if harf == "e" && devam2 == true{
-                sayı2 += 1
-                print(harf)
-                if sayı2 == 3 && devam2 == true{
-                   Bebe = true
-                }
-            } else {
-                if sayı2 == 3 && devam2 == true{
-                    Bebe = true
-                }
-                devam2 = false
-            }
-        }
-        var devam3 = false
-        var sayı3 = 0
-        for harf in ad{
-            if harf == "a"{
-                devam3 = true
-                sayı3 += 1
-            } else if harf == "g" && devam3 == true{
-                sayı3 += 1
-            } else if harf == "u" && devam3 == true{
-                sayı3 += 1
-                print(harf)
-                if sayı3 == 3 && devam3 == true{
-                    agu = true
-                }
-            } else {
-                if sayı3 == 3 && devam3 == true{
-                    agu = true
-                }
-                devam2 = false
-            }
-        }
-        
+        var kalkan = Kalkanmı(bulunacak: "", ad: self.isim)
+        var bebek = doğrumu(bulunacak: "", ad: self.isim)
+        var agu = Agumu(bulunacak: "", ad: self.isim)
         if self.isim.lowercased() == "Bebe Kalkanatik Devreleri".lowercased(){
             self.image = Image(systemName: "shield.lefthalf.fill")
         } else if kalkan == true{
