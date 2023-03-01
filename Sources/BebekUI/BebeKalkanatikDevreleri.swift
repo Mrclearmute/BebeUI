@@ -14,6 +14,9 @@ import SwiftUI
             Image(systemName: "custom.lock.trianglebadge.exclamationmark")
         }
     }
+    @inlinable public init(){
+        
+    }
 }
 
 @available(macOS 13.0, iOS 16.0, tvOS 16.0, watchOS 8.0, *)
