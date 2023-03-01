@@ -11,7 +11,9 @@ import SwiftUI
 @frozen public struct BebeKalkanatikDevreleri: View {
     public var body: some View {
         NavigationStack {
-            Image(systemName: "custom.lock.trianglebadge.exclamationmark")
+            Image(systemName: "lock.trianglebadge.exclamationmark")
+                .symbolVariant(.circle.slash)
+                .foregroundStyle(.yellow, .green)
         }
     }
     @inlinable public init(){
