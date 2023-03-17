@@ -46,9 +46,11 @@ import SwiftUI
         var agu = Agumu(bulunacak: "", ad: self.isim)
         if self.isim.lowercased() == "Bebe Kalkanatik Devreleri".lowercased(){
             self.image = Image(systemName: "shield.lefthalf.fill")
+        } else if kalkan && bebek{
+            self.image = Image(systemName: "shield.checkerboard")
         } else if kalkan == true{
             self.image = Image(systemName: "exclamationmark.shield.fill")
-        } else if Bebe == true{
+        } else if bebek == true{
             self.image = Image(systemName: "person.crop.square.fill.and.at.rectangle")
         }  else if agu == true{
             self.image = Image(systemName: "person.2.crop.square.stack.fill")

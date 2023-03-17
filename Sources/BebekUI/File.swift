@@ -8,7 +8,7 @@
 import Foundation
 
 public enum Meslek{
-    case pilot, ajan, bilinmiyor, vb
+    case pilot, bebe_ajanı, bilinmiyor, yardımcı_pilot, komutan, tamirci
 }
 
 public protocol Kişi: Hashable{
